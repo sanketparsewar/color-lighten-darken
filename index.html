@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title">
+            Color Lighten/Darker
+        </h1>
+        <label for="hex">Color (Hex)</label>
+        <input type="text" name="hex" id="hexInput" placeholder="#000000" value="#c6d5ac" />
+
+        <!-- div with a class toggle -->
+        <!-- two pieces of text -lighten/darken -->
+        <!-- div id toggleBtn and inside will have a inner-circle -->
+
+        <div class="toggle">
+            <p id="lightenText" class="toggle-text">Lighten </p>
+            <div class="toggle-btn" id="toggleBtn">
+                <div class="inner-circle"></div>
+            </div>
+            <p id="darkenText" class="toggle-text unselected">Darken </p>
+        </div>
+
+        <label for="slider" id="sliderText">0%</label>
+        <input type="range" min="0" max="100" value="0" class="slider" id="slider" name="slider">
+
+        <p>Input Color</p>
+        <div id="inputColor" class="box"></div>
+        <p id="alteredColorText">Altered Color</p>
+        <div class="box" id="alteredColor"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
